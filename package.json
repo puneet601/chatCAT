@@ -1,0 +1,31 @@
+{
+  "name": "chatcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puneet601/chatCAT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puneet601/chatCAT/issues"
+  },
+  "homepage": "https://github.com/puneet601/chatCAT#readme",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "ejs": "^3.1.10",
+    "express": "4.19.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^5.13.22",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}
