@@ -53,6 +53,14 @@ const findById = id => {
     })
 }
 
+const isAuthenticated = (req,res,next) => {
+    if(req.isAuthenticated){
+        next();
+    }else{
+        res.redirect('/')
+    }
+}
+
 const route = (routes) => {
     registerRoutes(routes)
     return router
@@ -62,5 +70,6 @@ module.exports = {
     route,
     findOne,
     createNewUser,
-    findById
+    findById,
+    isAuthenticated
 }
